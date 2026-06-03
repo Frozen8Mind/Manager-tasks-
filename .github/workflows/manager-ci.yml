@@ -18,10 +18,6 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
-      - name: Show files
-        run: |
-          ls -la
-          find . -name "*.csproj"
       - name: Restore dependencies
         run: dotnet restore ConsoleApp5.csproj   # исправлено
       - name: Build
