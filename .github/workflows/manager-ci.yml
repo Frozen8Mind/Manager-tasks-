@@ -23,7 +23,7 @@ jobs:
           ls -la
           find . -name "*.csproj"
       - name: Restore dependencies
-        run: dotnet restore Manager-tasks-/ConsoleApp5.csproj   # исправлено
+        run: dotnet restore ConsoleApp5.csproj   # исправлено
       - name: Build
         run: dotnet build --no-restore
       - name: Test
